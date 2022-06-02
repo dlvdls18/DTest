@@ -56,7 +56,7 @@ These are the arguments for using `DTest`:
 
 `Rules` are important for generating random arguments.
 `Rules` can:
-- [x] Customize the argument type
+- Customize the argument type
   - String
   - Number
     - Can customize the range (0-10 by default)
@@ -84,13 +84,8 @@ These are the arguments for using `DTest`:
   - Object (Any Value)
     - Customized object size (required)
     - Keys can be String or Number
-- [ ] Can customize the percentage of true/false in boolean type
-- [ ] Can add predicted value
-- [ ] Can choose if the argument is null or not
-- [ ] Can randomize an argument with multiple types
-- [ ] Can remove duplicates
 
-Unchecked checkboxes are TODO.
+More features coming soon!
 
 ### Format
 
