@@ -176,9 +176,10 @@ function DTest(func, rules, handler) {
     var rule = rules[i];
     var rf = [string, randint, bool, any, stringarray, numarray, boolarray, anyarray, stringobject, numobject, boolobject, anyobject];
     var rt = rule.type;
-    if(typeof rt == "string") var f = arraysearch(rf, rt);
+    var f = null;
+    if(typeof rt == "string") f = arraysearch(rf, rt);
     if(Array.isArray(rt)) {
-      var f 
+      var f = arraysearch(rf, rt[randint(0, rt.length - )]);
     } else {
       if(rule.nullable == true && bool() == true) call_args.push(null);
       else call_args.push(rule.pred_value || f.apply({}, rule.config || []));
