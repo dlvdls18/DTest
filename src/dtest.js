@@ -167,7 +167,7 @@ function DTest(func, rules, config, handler) {
       var nf = parseInt("0." + (n + 1));
       if(num < yf) return true;
       else if(num < nf) return false;
-      else return randint(0, 1) == 0;
+      else return bool();
     }
   }
   // loop each rules
