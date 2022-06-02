@@ -86,10 +86,11 @@ DTest.VERSION = ...;
 - [x] Remove the documentation from `dtest.js`
 - [x] Remove the TODO from `README.md`
 
-- [x] Add configuration for `any array` and `any object`
+- [x] Add configuration for `any array`, md `any object`;
 ```js
 anyobject(12, {
   randint: [10, 30],
-  boolean: [DTest.PERCENTAGE_LOW, DTest.PERCENTAGE_NORMAL]
+  boolean: [DTest.PERCENTAGE_LOW, DTest.PERCENTAGE_NORMAL],
+  string:
 });
 ```
