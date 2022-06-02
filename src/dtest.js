@@ -32,7 +32,8 @@ function DTest(func, rules, handler) {
     if(format != null) {
       fmt = "";
       if(format == 0) {
-        var vowels = Array.from("aeu");
+        var vowels = Array.from("aeiou");
+        var consonants = Array.from("bcdfghjklmnpqrstvwxyz");
       }
     }
     return fmt || random;
