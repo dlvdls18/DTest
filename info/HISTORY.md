@@ -44,4 +44,5 @@ June 2, 2022
 ### Code `tf[tn].apply({}, ...)` changed to `tf[tn].apply({}, config[tf[tn].name] || []`
 ### String format added
 ### Nullable added
-### 
+### Predicate value added
+### Boolean percentage added
