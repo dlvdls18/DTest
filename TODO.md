@@ -94,3 +94,4 @@ anyobject(12, {
 
 - [x] Make the static variables unwritable
 - [ ] Add arguments verification
+- [ ] Transfer `version.txt`, `TODO.md`, `CONTRIBUTE`
