@@ -39,4 +39,6 @@ June 2, 2022
 ### Remove duplicates added
 ### Function `DTest` argument added `config`
 ### Function `any` argument added `config`
-### Function `anyobject` argument added ``
+### Function `anyobject` argument added `config`
+### Function `anyarray` argument added `config`
+### Code ``
