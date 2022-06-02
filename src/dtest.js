@@ -181,7 +181,6 @@ function DTest(func, rules, config, handler) {
     else f = arraysearch(rf, rt[randint(0, rt.length - 1)]);
     if(rule.nullable == true && bool() == true) call_args.push(null);
     else call_args.push(rule.pred_value || f.apply({}, rule.config || []));
-    }
   }
   // call the function directly
   if(handler == null) return {
