@@ -86,7 +86,7 @@ DTest.VERSION = ...;
 - [x] Remove the documentation from `dtest.js`
 - [x] Remove the TODO from `README.md`
 
-- [x] Add configuration for `any`, `any array`, and `any object`;
+- [x] Add configuration for `any`, `any array` and `any object`;
 ```js
 anyobject(12, {
   randint: [10, 30],
