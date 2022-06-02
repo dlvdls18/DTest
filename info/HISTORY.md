@@ -32,4 +32,4 @@ June 2, 2022
 ### File `TODO.md` updated
 ### File `info/HISTORY.md` added
 ### Added range to `array any` and `array object` for number
-#
+### Static variable `FOMRAT_STRING` `FORMAT_NUMBER` ``
