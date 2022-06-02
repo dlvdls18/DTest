@@ -44,7 +44,7 @@ anyobject(size, min, max, key);
 // > ...
 ```
 
-- [ ] Multiple type
+- [x] Multiple type
 
 ```js
 [{
