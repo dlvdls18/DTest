@@ -161,7 +161,10 @@ function DTest(func, rules, handler) {
   // percentage boolean
   function percentage(y, n) {
     if(y == n) return randint(0, 1) == 0;
-    else return randint(0, );
+    else {
+      var num = Math.random();
+      var yf = parseInt("0"
+    }
   }
   // loop each rules
   var call_args = [];
