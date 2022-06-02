@@ -5,7 +5,7 @@
  * https://github.com/dlvdls18/DTest/
  */
 
-function DTest(func, rules, config, handler) {
+function DTest(func, rules, handler, config) {
   // important note:
   // every type function values must be exactly
   // string, randint, bool, any, stringarray, numarray, boolarray, anyarray, stringobject, numobject, boolobject, anyobject
