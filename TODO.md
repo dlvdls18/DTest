@@ -92,4 +92,4 @@ anyobject(12, {
 });
 ```
 
-- [x] Make the stativ variables unwritable
+- [x] Make the static variables unwritable
