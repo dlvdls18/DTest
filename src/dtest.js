@@ -188,3 +188,6 @@ DTest.PERCENTAGE_HIGH = 3;
 DTest.PERCENTAGE_HIGHEST = 4;
 
 DTest.VERSION = 1.0;
+
+
+// make all static variables above unwritable
