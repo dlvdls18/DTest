@@ -491,6 +491,28 @@ These are available keys for the `config`:
 - bool (boolean)
 
 
+```js
+{
+  string: [DTest.FORMAT_STRING],
+  randint: [1, 1000],
+  bool: [DTest.PERCENTAGE_LOW, DTest.PERCENTAGE_NORMAL]
+}
+```
+
+
+## Boolean Percentage
+
+- `DTest.PERCENTAGE_LOW`
+- `DTest.PERCENTAGE_NORMAL`
+- `DTest.PERCENTAGE_HIGH`
+
+```js
+DTest(..., [{
+  type: DTest.TYPE_BOOLEAN,
+  config: [DTest.PERCENTAGE_LOW, DTest.PERCENTAGE_HIGJ]
+}]);
+```
+
 # Others
 
 ## Contribution
