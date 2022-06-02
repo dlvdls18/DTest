@@ -33,7 +33,7 @@ anyobject(size, min, max, key);
 // > ...
 ```
 
-- [ ] Ability to allow or disallow nullable value
+- [x] Ability to allow or disallow nullable value
 
 ```js
 [{
