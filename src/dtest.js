@@ -12,7 +12,6 @@ function DTest(func, rules, handler) {
   // for static variable type
   var inc_num = -1;
   // increment the number and return it
-  // usage for object number key
   function inc() {
     inc_num++;
     return inc_num;
@@ -126,7 +125,6 @@ function DTest(func, rules, handler) {
     return obj;
   }
   // return the array item using absolute out of range position value
-  // usage for object key type
   function arraysearch(array, position) {
     var pos = 0;
     for(var i = 0; i < Math.abs(position); i++) {
@@ -136,7 +134,6 @@ function DTest(func, rules, handler) {
     return array[pos];
   }
   // capitalize each words
-  // usage for format string
   function title(str) {
     var res = "";
     for(var i = 0; i < str.split(" ").length; i++) {
@@ -146,7 +143,6 @@ function DTest(func, rules, handler) {
     return res.slice(1);
   }
   // generate consonant and vowel string
-  // usage for format string
   function generateword() {
     // some letters are removed for stable word
     var vowels = Array.from("aeiou");
@@ -154,7 +150,6 @@ function DTest(func, rules, handler) {
     return consonants[randint(0), consonants.length - 1] + vowels[randint(0, vowels.length - 1)];
   }
   // generate full un/defined word
-  // usage for format strin
   function generateword() {
   // loop each rules
   var call_args = [];
