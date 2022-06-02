@@ -141,7 +141,8 @@ function DTest(func, rules, handler) {
   function title(str) {
     var res = "";
     for(var i = 0; i < str.split(" ").length; i++) {
-      var w = str.split(" ")[i]
+      var w = str.split(" ")[i];
+      res += " " + w.charAt(1).toUpperVas
     }
   }
   // loop each rules
