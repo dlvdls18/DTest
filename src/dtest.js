@@ -58,12 +58,12 @@ function DTest(func, rules, handler) {
     return arr;
   }
   // return an array with random type
-  function anyarray(size) {
+  function anyarray(size, min, max) {
     var arr = [];
     for(var i = 0; i < size; i++) {
       var t = randint(0, 2);
       var f = [string, randint, bool];
-      arr.push(f[t]());
+      arr.push(f[t](min, max));
     }
     return arr;
   }
@@ -104,7 +104,7 @@ function DTest(func, rules, handler) {
     return obj;
   }
   // return an object with random type
-  function anyobject(size, key) {
+  function anyobject(size, min, max key) {
     key = key || 0;
     inc_num = -1;
     var kf = [string, inc];
@@ -113,7 +113,7 @@ function DTest(func, rules, handler) {
       var kt = arraysearch(kf, key);
       var t = randint(0, 2);
       var f = [string, randint, bool];
-      obj[kt()] = f[t]();
+      obj[kt()] = f[t](min, max);
     }
     return obj;
   }
