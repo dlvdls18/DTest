@@ -30,7 +30,7 @@ function DTest(func, rules, handler) {
     if(format != null) {
       fmt = "";
       if(format == 0) {
-        
+        for
       }
     }
     return fmt || random;
@@ -149,7 +149,7 @@ function DTest(func, rules, handler) {
     return consonants[randint(0), consonants.length - 1] + vowels[randint(0, vowels.length - 1)];
   }
   // generate full un/defined word
-  function generateword() {
+  function generatefullword() {
     var gen = "";
     for(var i = 0; i < randint(1, 8); i++) gen += generateword();
     return gen;
