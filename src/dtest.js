@@ -30,7 +30,7 @@ function DTest(func, rules, handler) {
     if(format != null) {
       fmt = "";
       if(format == 0) {
-        for
+        for(var i = 0; i < randint(1, 
       }
     }
     return fmt || random;
