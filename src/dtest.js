@@ -173,7 +173,8 @@ function DTest(func, rules, handler, config) {
   // convert set to array
   function set_to_array(set) {
     var arr = [];
-    set.forEach(function(
+    set.forEach(function(item) { arr.push(item) });
+    return arr;
   }
   // loop each rules
   var call_args = [];
