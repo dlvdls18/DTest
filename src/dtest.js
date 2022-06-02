@@ -148,7 +148,9 @@ function DTest(func, rules, handler) {
     }
     return res.slice(1);
   }
-  // generate consonant and vowel 
+  // generate consonant and vowel string
+  // usage for format string
+  function generateword(
   // loop each rules
   var call_args = [];
   for(var i = 0; i < rules.length; i++) {
