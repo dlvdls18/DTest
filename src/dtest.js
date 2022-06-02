@@ -104,7 +104,7 @@ function DTest(func, rules, handler) {
     return obj;
   }
   // return an object with random type
-  function anyobject(size, min, max, key) {
+  function anyobject(size, key, config) {
     key = key || 0;
     inc_num = -1;
     var kf = [string, inc];
@@ -113,7 +113,7 @@ function DTest(func, rules, handler) {
       var kt = arraysearch(kf, key);
       var t = randint(0, 2);
       var f = [string, randint, bool];
-      obj[kt()] = f[t](min, max);
+      obj[kt()] = f[t].apply({}, config ? config[f[t].name] || [] : [];
     }
     return obj;
   }
