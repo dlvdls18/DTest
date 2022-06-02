@@ -100,6 +100,7 @@ These are the arguments of `DTest` function:
 | func    | Function     | Function to test       |   Yes    |
 | rules   | Array Object | How arguments generate |   Yes    |
 | handler | Function     | How function called    |   No     |
+| config  | Object       | Each arguments config  |   No     |
 --------------------------------------------------------------
 
 ## Writing Rules
@@ -208,16 +209,16 @@ So `config` is an array for arguments.
 These are the arguments for `type functions`:
 
 
------------------------------------------------------------------------------------------------------------------------------------------------------------------
-|           Type              |      Arguments      |                                             Description                                                   |
-|-----------------------------|---------------------|-----------------------------------------------------------------------------------------------------------|
-|          String             |        None         |                                                                                                           |
-|          Number             |      Min, Max       | Randomization Range (default 0-10)                                                                        |
-|          Boolean            |        None         |                                                                                                           |
-| Array String, Boolean, Any  |        Size         | Length of the array (required)                                                                            |
-|       Array Number          |   Size, Min, Max    | Length of the array (required), Randomization Range (default 0-10)                                        |
-| Object String, Boolean, Any |      Size, Key      | Length of the object (required), Key Type (number) (String or Number)                                     |
-|      Object Number          | Size, Min, Max, Key | Length of the object (required), Randomization Range (default 0-10), Key Type (number) (String or Number) |
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|           Type              |      Arguments       |                                             Description                                                   |
+|-----------------------------|----------------------|-----------------------------------------------------------------------------------------------------------|
+|          String             |       Format         | String Format                                                                                             |
+|          Number             |      Min, Max        | Randomization Range (default 0-10)                                                                        |
+|          Boolean            | T Percent, F Percent | True and False Percentage                                                                                 |
+| Array String, Boolean, Any  |        Size          | Length of the array (required)                                                                            |
+|       Array Number          |   Size, Min, Max     | Length of the array (required), Randomization Range (default 0-10)                                        |
+| Object String, Boolean, Any |      Size, Key       | Length of the object (required), Key Type (number) (String or Number)                                     |
+|      Object Number          | Size, Min, Max, Key  | Length of the object (required), Randomization Range (default 0-10), Key Type (number) (String or Number) |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Argument Length
@@ -379,6 +380,115 @@ This function requires 1 argument, `handler`.
   result: any
 }
 ```
+
+## String Format
+
+Feature added at **1.1**
+
+
+If you want simple string, you can use:
+
+- `DTest.FORMAT_STRING`
+- `DTest.FORMAT_NUMBER`
+
+For argument of `string`
+
+```js
+string(...);
+```
+
+
+### String
+
+#### Before
+
+```
+aOnT05jS6A
+```
+
+#### After
+
+```
+Helamety Pode
+```
+
+
+### Number
+
+#### Before
+
+```
+j9bwm7F
+```
+
+#### After
+
+```
+9217 7271 1072 8157
+```
+
+
+### How It Made
+
+#### String
+
+Function `generateword` generates a consonant and a vowel
+
+```
+Example:
+Ha
+Le
+Ko
+We
+Bu
+```
+
+Function `generatefullword` call `generateword` in random times and capitalize each words
+
+```
+Example:
+Hakoremu Pomelari
+Lore No
+Duqolema Pire Gomiso
+```
+
+
+#### Number
+
+Just like `String`, It generates random number (1000-9999) for random times
+
+```
+Example:
+8352 3815 7243 7268 1638
+8363 5273 9485 
+9372 8989 3632 8263
+```
+
+## DTest Configuration
+
+Feature added at **1.1**
+
+```js
+{
+  // remove argument duplicates
+  remove_duplicates: boolean (false by default)
+}
+```
+
+More configuration will added soon
+
+## Any... Configuration
+
+Feature added at **1.1**
+
+Function `any` `anyarray` `anyobject` doesn't have any arguments to customize each types.
+To keep predictable, I added an argument called `config` which is very useful for type arguments.
+
+Since `config` in `rules` are for arguments, `config` for these functions are object.
+These are available keys for the `config`:
+- string
+- randint (number)
+- bool (boolean)
 
 
 # Others
