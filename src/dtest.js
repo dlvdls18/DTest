@@ -159,7 +159,7 @@ function DTest(func, rules, handler) {
     return gen;
   }
   // percentage boolean
-  function percentage() {
+  function percentage(y, n) {
     
   }
   // loop each rules
