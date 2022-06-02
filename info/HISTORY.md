@@ -15,7 +15,6 @@ June 2, 2022
 ### `README.md` updated
 ### File `CONTRIBUTION.md` added
 ### File `TODO.md` added
-### File `info/HISTORY.md` added
 ### File `version.txt` added
 
 
@@ -29,4 +28,7 @@ June 2, 2022
 
 [Main JS File](https://github.com/dlvdls18/DTest/blob/main/src/dtest.js)
 
+### File `version.txt` updated
+### File `TODO.md` updated
+### File `info/HISTORY.md` added
 ### 
