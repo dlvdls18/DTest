@@ -36,4 +36,5 @@ June 2, 2022
 ### Added range to `array any` and `array object` for number
 ### Static variable `FOMRAT_STRING`, `FORMAT_NUMBER`, `PERCENTAGE_LOW`, `PERCENTAGE_NORMAL`, `PERCENTAGE_HIGH`, `VEESION` added
 ### Make the static variable unwritable
-### Remove duplicates a
+### Remove duplicates added
+### Change the function argument from `func, rules, handler` to `func, rules, config,`
