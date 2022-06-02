@@ -90,6 +90,6 @@ DTest.VERSION = ...;
 ```js
 anyobject(12, {
   randint: [10, 30],
-  boolean: []
+  boolean: [DTest.PERCENTAGE_LOW, DTest.PERCENTAGE_NORMAL]
 });
 ```
