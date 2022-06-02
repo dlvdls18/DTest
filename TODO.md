@@ -1,6 +1,6 @@
 # June 2, 2022
 
-- [x] Add range to `array any` and `object any` if there are numbers
+- [x] Add range to `array any` and `object any` for number
 
 ```js
 anyarray(size, min, max);
