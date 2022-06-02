@@ -32,9 +32,10 @@ function DTest(func, rules, handler) {
     if(format != null) {
       fmt = "";
       if(format == 0) {
+        // some letters are removed for stable words
         var vowels = Array.from("aeiou");
-        var consonants = Array.from("bcdfghjklmnpqrstvwxyz");
-        var in_consonant = 
+        var consonants = Array.from("bcdfghjklmnpqrstwy");
+        var in_consonant = true;
       }
     }
     return fmt || random;
