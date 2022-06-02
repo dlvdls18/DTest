@@ -229,7 +229,7 @@ DTest.PERCENTAGE_HIGH = 2;
 
 DTest.VERSION = 1.1;
 
-// make all static variables (above) unwritable
+// make all static variable unwritable
 for(var i in DTest) {
   if(["TYPE", "FORMAT", "PERCENTAGE", "VERSION"].includes(i.split("_")[0])) {
     Object.defineProperty(DTest, i, {
