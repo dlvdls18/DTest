@@ -46,7 +46,7 @@ function DTest(func, rules, handler) {
       var rand = randint(0, max);
       var tc = [];
       var fc = [];
-      for(var i = 0; i < tp 
+      for(var i = 0; i < max; i++) {
     }
   }
   // return random any type
