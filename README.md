@@ -92,7 +92,7 @@ touch index.js
 
 ## Basics
 
-These are the arguments for using `DTest`:
+These are the arguments of `DTest` function:
 
 --------------------------------------------------------------
 |  Name   |     Type     |       Description      | Required |
@@ -379,8 +379,13 @@ This function requires 1 argument, `handler`.
 ```
 
 
-# Contribution
+# Others
+
+## Contribution
 
 Anyone can `contribute` for free but there are limitations and rules.
 You can read it at [CONTRIBUTION.md](https://github.com/dlvdls18/DTest/blob/main/CONTRIBUTION.md)
 
+## TODO
+
+You can view or contribute at the [TODO.md](https://github.com/dlvdls18/DTest/blob/main/TODO.md)
