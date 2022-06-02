@@ -72,10 +72,10 @@ anyobject(size, min, max, key);
 
 [{
   type: DTest.TYPE_STRING,
-  simplified: true
+  config: [true, DTest.]
 }]
 // > Hogelir Watufe
-// > 0193 8263 8264 6193 8163
+// > 0193 8263 8264 6192
 ```
 
 - [ ] Add version to `dtest.js`
