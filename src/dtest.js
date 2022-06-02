@@ -113,7 +113,7 @@ function DTest(func, rules, handler) {
       var kt = arraysearch(kf, key);
       var t = randint(0, 2);
       var f = [string, randint, bool];
-      obj[kt()] = f[t].apply({}, config ? config[f[t].name] || [] : [];
+      obj[kt()] = f[t].apply({}, config ? config[f[t].name] || [] : []);
     }
     return obj;
   }
