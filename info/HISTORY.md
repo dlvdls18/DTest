@@ -16,6 +16,8 @@ June 2, 2022
 ### File `CONTRIBUTION.md` added
 ### File `TODO.md` added
 ### File `version.txt` added
+### Documentation removed at `src/dtest.js`
+### TODO removed at `README.md`
 
 
 ## First Update
