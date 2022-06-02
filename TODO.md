@@ -57,11 +57,6 @@ anyobject(size, min, max, key);
 ```
 
 - [x] Remove duplicates
-```js
-[{
-  type: DTest.TYPE_NUMBER,
-  remove_duplicates: true
-}]
 ```
 
 - [x] Ability to generate simple string
