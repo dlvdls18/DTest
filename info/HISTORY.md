@@ -41,4 +41,5 @@ June 2, 2022
 ### Function `any` argument added `config`
 ### Function `anyobject` argument added `config`
 ### Function `anyarray` argument added `config`
-### Code `tf[tn].apply({}, ...)` changed to `tf[tn].apply({}, config[tf`
+### Code `tf[tn].apply({}, ...)` changed to `tf[tn].apply({}, config[tf[tn].name] || []`
+### 
