@@ -386,8 +386,8 @@ This function requires 1 argument, `handler`.
 ## Contribution
 
 Anyone can `contribute` for free but there are limitations and rules.
-You can read it at [CONTRIBUTION.md](https://github.com/dlvdls18/DTest/blob/main/CONTRIBUTION.md)
+You can read it at [CONTRIBUTION.md](https://github.com/dlvdls18/DTest/blob/main/info/CONTRIBUTION.md)
 
 ## TODO
 
-You can view or contribute at the [TODO.md](https://github.com/dlvdls18/DTest/blob/main/TODO.md)
+You can view or contribute at the [TODO.md](https://github.com/dlvdls18/DTest/blob/main/info/TODO.md)
