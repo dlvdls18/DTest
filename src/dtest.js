@@ -133,7 +133,7 @@ function DTest(func, rules, handler) {
     var rule = rules[i];
     var rf = [string, randint, bool, any, stringarray, numarray, boolarray, anyarray, stringobject, numobject, boolobject, anyobject];
     var rt = rule.type;
-    call_args.push(arraysearch(rf, rt).apply({}, rule.config || []));
+    call_args.push(rule.value || arraysearch(rf, rt).apply({}, rule.config || []));
   }
   // call the function directly
   if(handler == null) return {
