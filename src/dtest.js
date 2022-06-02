@@ -165,11 +165,9 @@ function DTest(func, rules, handler) {
       var num = Math.random();
       var yf = parseInt("0." + (y + 1));
       var nf = parseInt("0." + (n + 1));
-      var iy = yf > yn;
-      if(iy && num < yf) return true;
-      else if(iy && num < nf) return false;
-      else if(iy) return randint(0, 1) == 0;
-      else if(num < yf) return 
+      if(num < yf) return true;
+      else if(num < nf) return false;
+      else return randint(0, 1) == 0;
     }
   }
   // loop each rules
