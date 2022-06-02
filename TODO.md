@@ -5,7 +5,7 @@ anyarray(size, min, max);
 anyobject(size, min, max, key);
 ```
 
-- [x] Add percentage to boolean for randomization chance *
+- [x] Add percentage to boolean for randomization chance **Cancelled**
 
 ```js
 [{
