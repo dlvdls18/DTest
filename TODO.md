@@ -89,6 +89,7 @@ DTest.VERSION = ...;
 - [x] Add configuration for `any array` and `any object`
 ```js
 anyobject(12, {
-  
+  randint: [10, 30],
+  boolean: []
 });
 ```
