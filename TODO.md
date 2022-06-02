@@ -56,7 +56,7 @@ anyobject(size, min, max, key);
 // > true
 ```
 
-- [ ] Remove duplicates
+- [x] Remove duplicates
 ```js
 [{
   type: DTest.TYPE_NUMBER,
