@@ -34,7 +34,7 @@ function DTest(func, rules, handler) {
       if(format == 0) {
         // some letters are removed for stable words
         var vowels = Array.from("aeiou");
-        var consonants = Array.from("bcdfghjklmnpqrstwy");
+        var consonants = Array.from("bcdfghklmnprsty");
         var in_consonant = true;
       }
     }
