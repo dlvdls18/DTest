@@ -178,11 +178,9 @@ function DTest(func, rules, handler) {
     var rt = rule.type;
     var f = null;
     if(typeof rt == "string") f = arraysearch(rf, rt);
-    if(Array.isArray(rt)) {
-      var f = arraysearch(rf, rt[randint(0, rt.length - )]);
-    } else {
-      if(rule.nullable == true && bool() == true) call_args.push(null);
-      else call_args.push(rule.pred_value || f.apply({}, rule.config || []));
+    else f = arraysearch(rf, rt[randint(0, rt.length - 1)]);
+    if(rule.nullable == true && bool() == true) call_args.push(null);
+    else call_args.push(rule.pred_value || f.apply({}, rule.config || []));
     }
   }
   // call the function directly
