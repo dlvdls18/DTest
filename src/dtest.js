@@ -192,7 +192,7 @@ DTest.VERSION = 1.0;
 
 // make all static variables (above) unwritable
 for(var i in DTest) {
-  if([].includes(i.split("_")[0])) {
+  if(["TYPE", "FORMAT", "PERCENTAGE", "VERSION"].includes(i.split("_")[0])) {
     
   }
 }
