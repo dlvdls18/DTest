@@ -42,8 +42,8 @@ function DTest(func, rules, handler) {
   function bool(tp, fp) {
     if(!tp || !fp) return randint(0, 1) == 1;
     else {
-      var rand = randint(0, 4);
-      if();
+      var rand = randint(0, 3);
+      
     }
   }
   // return random any type
@@ -214,9 +214,9 @@ DTest.TYPE_OBJECT_ANY = 11;
 DTest.FORMAT_STRING = 0;
 DTest.FORMAT_NUMBER = 1;
 
-DTest.PERCENTAGE_LOW = 0;
-DTest.PERCENTAGE_NORMAL = 1;
-DTest.PERCENTAGE_HIGH = 2;
+DTest.PERCENTAGE_LOW = 1;
+DTest.PERCENTAGE_NORMAL = 2;
+DTest.PERCENTAGE_HIGH = 3;
 
 DTest.VERSION = 1.1;
 
