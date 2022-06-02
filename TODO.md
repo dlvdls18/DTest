@@ -78,7 +78,7 @@ anyobject(size, min, max, key);
 // > yes
 ```
 
-- [ ] Add version to `dtest.js`
+- [x] Add version to `dtest.js`
 ```js
 DTest.VERSION = ...;
 ```
