@@ -193,6 +193,8 @@ DTest.VERSION = 1.0;
 // make all static variables (above) unwritable
 for(var i in DTest) {
   if(["TYPE", "FORMAT", "PERCENTAGE", "VERSION"].includes(i.split("_")[0])) {
-    
+    Object.defineProperties(DTest, i, {
+      writable: false
+    });
   }
 }
