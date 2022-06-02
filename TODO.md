@@ -94,3 +94,5 @@ anyobject(12, {
   string: [DTest.FORMAT_STRING]
 });
 ```
+
+- [x] Make the stativ variables unwritable
