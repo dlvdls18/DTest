@@ -148,10 +148,10 @@ function DTest(func, rules, handler) {
   // generate consonant and vowel string
   // usage for format string
   function generateword() {
-    // some letters are removed for stable words
+    // some letters are removed for stable word
     var vowels = Array.from("aeiou");
     var consonants = Array.from("bcdfghklmnprsty");
-    var in_consonant = true;
+    return vowels[randint(0, vowels.length - 1),
   }
   // loop each rules
   var call_args = [];
