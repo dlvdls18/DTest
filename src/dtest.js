@@ -45,7 +45,7 @@ function DTest(func, rules, handler) {
       var rand = randint(0, 3);
       var tc = [];
       var fc = [];
-      if(tp == 1)
+      if(tp == 1) 
     }
   }
   // return random any type
