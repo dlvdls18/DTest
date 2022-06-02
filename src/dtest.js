@@ -42,7 +42,7 @@ function DTest(func, rules, handler) {
   function bool(tp, fp) {
     if(!tp || !fp) return randint(0, 1) == 1;
     else {
-      var rand = randint(0, 2);
+      var rand = randint(0, tp + fp);
       
     }
   }
