@@ -1,11 +1,11 @@
-- [ ] Add range to array any and object any if there are numbers
+- [x] Add range to array any and object any if there are numbers
 
 ```js
 anyarray(size, min, max);
 anyobject(size, min, max, key);
 ```
 
-- [ ] Add percentage to boolean for randomization chance
+- [x] Add percentage to boolean for randomization chance *
 
 ```js
 [{
