@@ -43,7 +43,7 @@ function DTest(func, rules, handler) {
     if(!tp || !fp) return randint(0, 1) == 1;
     else {
       if(tp == fp) return randint(0, 1) == 1;
-      else i
+      else if(tp == 1 fp == 2) return random
     }
   }
   // return random any type
