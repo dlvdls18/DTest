@@ -5,24 +5,26 @@ Generating argument is easy and simple, you can customize it anytime.
 
 ```js
 var users = [];
-function MyFunc(uid, password) {
+function NewUser(uid, password) {
   users.push({ uid, password });
 }
 
-var test = DTest(MyFunc, [{
+var test = DTest(NewUser, [{
   type: DTest.TYPE_NUMBER,
-  config: [-99999, 99999]
+  config: [0, 99999]
 }, {
   type: DTest.TYPE_STRING
-}, (func, args, res) => {
+}], (func, args, res) => {
   console.log("Calling");
   res(func.apply({}, args));
   console.log("Done");
-}]
-console.log(test.result);
+});
+console.log(test);
 ```
 
 # Getting Started
+
+## Installation
 
 Download the file [dtest.js](https://cdn.jsdelivr.net/gh/dlvdls18/DTest@main/dtest.js)
 then add the following code:
@@ -35,6 +37,56 @@ Or use JSDelivr CDN:
 ```html
 <script src="https://cdn.jsdelivr.net/gh/dlvdls18/DTest@main/dtest.js"></script>
 ```
+
+## Building Your Project
+
+1. Enter these commands in your terminal
+
+```bash
+mkdir MyProject
+cd MyProject
+touch index.html
+touch index.js
+```
+
+2. Open your favorite IDE and open the file `/MyProject/index.html`
+3. Copy this html template and paste it to `index.html`
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyProject</title>
+  </head>
+  <body>
+    <p>Hello, World!</p>
+  </body>
+  <!-- <script src="path/to/dtest.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/gh/dlvdls18/DTest@main/dtest.js"></script>
+  <script>
+    var users = [];
+    function NewUser(uid, password) {
+      users.push({ uid, password });
+    }
+    var test = DTest(NewUser, [{
+      type: DTest.TYPE_NUMBER,
+      config: [0, 99999]
+    }, {
+      type: DTest.TYPE_STRING
+    }], (func, args, res) => {
+      console.log("Calling");
+      res(func.apply({}, args));
+      console.log("Done");
+    });
+    console.log(test);
+  </script>
+</html>
+```
+4. Start Coding :tada:
+
+
 
 # Documentations
 
