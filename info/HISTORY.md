@@ -46,3 +46,4 @@ June 2, 2022
 ### Nullable added
 ### Predicate value added
 ### Boolean percentage added
+### Task `Add arguments verification` added to `TODO.md`
