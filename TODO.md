@@ -91,6 +91,6 @@ DTest.VERSION = ...;
 anyobject(12, {
   randint: [10, 30],
   boolean: [DTest.PERCENTAGE_LOW, DTest.PERCENTAGE_NORMAL],
-  string: [DTest.fo]
+  string: [DTest.FORMAT_STRING]
 });
 ```
