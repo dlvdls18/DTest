@@ -148,6 +148,7 @@ function DTest(func, rules, handler) {
     }
     return res.slice(1);
   }
+  // generate consonant and vowel 
   // loop each rules
   var call_args = [];
   for(var i = 0; i < rules.length; i++) {
