@@ -40,7 +40,10 @@ function DTest(func, rules, handler) {
   }
   // return random boolean
   function bool(tp, fp) {
-    return randint(0, 1) == 1;
+    if(!tp || !fp) return randint(0, 1) == 1;
+    else {
+      
+    }
   }
   // return random any type
   function any(config) {
