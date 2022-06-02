@@ -189,7 +189,10 @@ function DTest(func, rules, handler, config) {
     else call_args.push(rule.pred_value || f.apply({}, rule.config || []));
   }
   // remove duplicates
-  if(config.remove_duplicates
+  if(config.remove_duplicates == true) {
+    call_args = new Set(call_args);
+    
+  }
   // call the function directly
   if(handler == null) return {
     call_args, func,
