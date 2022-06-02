@@ -151,7 +151,7 @@ function DTest(func, rules, handler) {
     // some letters are removed for stable word
     var vowels = Array.from("aeiou");
     var consonants = Array.from("bcdfghklmnprsty");
-    return vowels[randint(0, vowels.length - 1),
+    return vowels[randint(0, vowels.length - 1)] + consonants[randint(0), vowels];
   }
   // loop each rules
   var call_args = [];
