@@ -24,11 +24,15 @@ function DTest(func, rules, handler) {
     return Math.floor(Math.random() * (max + min + 1)) + min;
   }
   // return random string
-  function string() {
+  function string(format) {
     var chars = Array.from("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789");
     var random = "";
     for(var i = 0; i < randint(3, 20); i++) random += chars[randint(0, chars.length - 1)];
-    return random;
+    var fmt = null;
+    if(format != null) {
+      fmt = "";
+    }
+    return fmt || random;
   }
   // return random boolean
   function bool() {
