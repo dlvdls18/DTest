@@ -158,6 +158,10 @@ function DTest(func, rules, handler) {
     for(var i = 0; i < randint(1, 8); i++) gen += generateword();
     return gen;
   }
+  // percentage boolean
+  function percentage() {
+    
+  }
   // loop each rules
   var call_args = [];
   for(var i = 0; i < rules.length; i++) {
