@@ -42,7 +42,8 @@ function DTest(func, rules, handler) {
   function bool(tp, fp) {
     if(!tp || !fp) return randint(0, 1) == 1;
     else {
-      var rand = randint(1, 100);
+      var rand = randint(0, 100);
+      if();
     }
   }
   // return random any type
