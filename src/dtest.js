@@ -153,8 +153,8 @@ function DTest(func, rules, handler) {
     var consonants = Array.from("bcdfghklmnprsty");
     return consonants[randint(0), consonants.length - 1] + vowels[randint(0, vowels.length - 1)];
   }
-    // generate consonant and vowel
-  // usage for format string
+  // generate full un/defined word
+  // usage for format strin
   function generateword() {
   // loop each rules
   var call_args = [];
