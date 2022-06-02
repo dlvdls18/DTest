@@ -45,8 +45,8 @@ function DTest(func, rules, handler) {
       if(tp == fp) return randint(0, 1) == 1;
       else if(tp == 0 && fp == 1) return randint(0, 2) == 0;
       else if(tp == 0 && fp == 2) return randint(0, 3) == 0;
-      else if(tp == 1 && fp == 0) return randint(0, 2) != 0;
-      else if(tp == 1 && fp == 2) return randint(0, 3) != 0;
+      else if(tp == 1 && fp == 0) return randint(0, 2) == 0;
+      else if(tp == 1 && fp == 2) return randint(0, 2) == 0;
       else if(tp == 2 && fp == 0) return randint(0, 2) == 0;
       else if(tp == 2 && fp == 1) return randint(0, 3) == 0;
     }
