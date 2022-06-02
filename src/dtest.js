@@ -63,7 +63,7 @@ function DTest(func, rules, handler) {
     for(var i = 0; i < size; i++) {
       var t = randint(0, 2);
       var f = [string, randint, bool];
-      arr.push(f[t](config));
+      arr.push(f[t].apply({}, config[));
     }
     return arr;
   }
