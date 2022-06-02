@@ -58,12 +58,12 @@ function DTest(func, rules, handler) {
     return arr;
   }
   // return an array with random type
-  function anyarray(size, min, max) {
+  function anyarray(size, config) {
     var arr = [];
     for(var i = 0; i < size; i++) {
       var t = randint(0, 2);
       var f = [string, randint, bool];
-      arr.push(f[t](min, max));
+      arr.push(f[t](config));
     }
     return arr;
   }
