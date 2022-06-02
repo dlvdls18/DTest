@@ -39,7 +39,7 @@ function DTest(func, rules, handler) {
     return fmt || random;
   }
   // return random boolean
-  function bool() {
+  function bool(tp, fp) {
     return randint(0, 1) == 1;
   }
   // return random any type
