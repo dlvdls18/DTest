@@ -31,10 +31,10 @@ function DTest(func, rules, handler) {
       fmt = "";
       if(format == 0) {
         for(var i = 0; i < randint(1, 3); i++) fmt += " " + generatefullword();
-        fmt = fmt.slice(1);
       } else {
-        
+        for(var i = 0; i < randint(2, 10); i++) fmt += " " + gen
       }
+      fmt = fmt.slice(1);
     }
     return fmt || random;
   }
