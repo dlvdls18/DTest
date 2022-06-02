@@ -32,7 +32,7 @@ function DTest(func, rules, handler) {
       if(format == 0) {
         for(var i = 0; i < randint(1, 3); i++) fmt += " " + generatefullword();
       } else {
-        for(var i = 0; i < randint(2, 10); i++) fmt += " " + gen
+        for(var i = 0; i < randint(2, 10); i++) fmt += " " + randint(1000, 9999);
       }
       fmt = fmt.slice(1);
     }
