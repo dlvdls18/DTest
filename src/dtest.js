@@ -32,10 +32,7 @@ function DTest(func, rules, handler) {
     if(format != null) {
       fmt = "";
       if(format == 0) {
-        // some letters are removed for stable words
-        var vowels = Array.from("aeiou");
-        var consonants = Array.from("bcdfghklmnprsty");
-        var in_consonant = true;
+        
       }
     }
     return fmt || random;
@@ -150,7 +147,12 @@ function DTest(func, rules, handler) {
   }
   // generate consonant and vowel string
   // usage for format string
-  function generateword(
+  function generateword() {
+    // some letters are removed for stable words
+    var vowels = Array.from("aeiou");
+    var consonants = Array.from("bcdfghklmnprsty");
+    var in_consonant = true;
+  }
   // loop each rules
   var call_args = [];
   for(var i = 0; i < rules.length; i++) {
