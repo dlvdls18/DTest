@@ -192,5 +192,7 @@ DTest.VERSION = 1.0;
 
 // make all static variables (above) unwritable
 for(var i in DTest) {
-  if(i.toUpperCase()
+  if([].includes(i.split("_")[0])) {
+    
+  }
 }
