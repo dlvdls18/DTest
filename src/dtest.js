@@ -9,7 +9,6 @@ function DTest(func, rules, handler) {
   // important note:
   // every type function values must be exactly
   // string, randint, bool, any, stringarray, numarray, boolarray, anyarray, stringobject, numobject, boolobject, anyobject
-  // for static variable type
   var inc_num = -1;
   // increment the number and return it
   function inc() {
@@ -151,6 +150,8 @@ function DTest(func, rules, handler) {
   }
   // generate full un/defined word
   function generateword() {
+    
+  }
   // loop each rules
   var call_args = [];
   for(var i = 0; i < rules.length; i++) {
