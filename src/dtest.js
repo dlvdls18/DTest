@@ -104,7 +104,7 @@ function DTest(func, rules, handler) {
     return obj;
   }
   // return an object with random type
-  function anyobject(size, min, max key) {
+  function anyobject(size, min, max, key) {
     key = key || 0;
     inc_num = -1;
     var kf = [string, inc];
