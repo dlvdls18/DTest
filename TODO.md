@@ -10,7 +10,7 @@ anyobject(size, min, max, key);
 ```js
 [{
   type: DTest.TYPE_BOOLEAN,
-  config: [DTest.PERCENTAGE_LOW, DTest.P]
+  config: [DTest.PERCENTAGE_LOW, DTest.PERCENTAGE_HIGH]
 }]
 // > false
 // > false
