@@ -191,7 +191,7 @@ function DTest(func, rules, handler, config) {
   // remove duplicates
   if(config.remove_duplicates == true) {
     call_args = new Set(call_args);
-    
+    call_args = set_to_array(call_args);
   }
   // call the function directly
   if(handler == null) return {
