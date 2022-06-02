@@ -335,5 +335,5 @@ This function requires 1 argument, `handler`.
 # Contribution
 
 Anyone can `contribute` for free but there are limitations and rules.
-You can read it at ...
+You can read it at [CONTRIBUTION.md](https://github.com/dlvdls18/DTest/blob/main/CONTRIBUTION.md)
 
