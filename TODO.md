@@ -62,7 +62,7 @@ anyobject(size, min, max, key);
 }]
 ```
 
-- [ ] Ability to generate simple string
+- [x] Ability to generate simple string
 ```js
 [{
   type: DTest.TYPE_STRING
