@@ -42,11 +42,10 @@ function DTest(func, rules, handler) {
   function bool(tp, fp) {
     if(!tp || !fp) return randint(0, 1) == 1;
     else {
-      var max = tp + fp;
-      var rand = randint(0, max);
+      var rand = randint(0, 3);
       var tc = [];
       var fc = [];
-      for(var i = 0; i < max; i++) {
+      if(tp == 1)
     }
   }
   // return random any type
@@ -217,7 +216,7 @@ DTest.TYPE_OBJECT_ANY = 11;
 DTest.FORMAT_STRING = 0;
 DTest.FORMAT_NUMBER = 1;
 
-DTest.PERCENTAGE_LOW = 1;
+DTest.PERCENTAGE_LOW = 0;
 DTest.PERCENTAGE_NORMAL = 2;
 DTest.PERCENTAGE_HIGH = 3;
 
