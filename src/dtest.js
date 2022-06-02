@@ -136,6 +136,11 @@ function DTest(func, rules, handler) {
     }
     return array[pos];
   }
+  // capitalize each words
+  // usage for format string
+  function title(str) {
+    var str
+  }
   // loop each rules
   var call_args = [];
   for(var i = 0; i < rules.length; i++) {
