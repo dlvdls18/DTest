@@ -36,8 +36,9 @@ function DTest(func, rules, handler) {
   }
   // return random any type
   function any(config) {
-    var tf = [string, randint, bool]
-    return tf[randint(0, 2)].apply({}, config ? config[f[t].name] || [] : []);
+    var tf = [string, randint, bool];
+    var tn = randint(0, 2);
+    return tf[n].apply({}, config ? config[tf[n].name] || [] : []);
   }
   // return random number array
   function numarray(size, min, max) {
