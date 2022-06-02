@@ -43,6 +43,8 @@ function DTest(func, rules, handler) {
     if(!tp || !fp) return randint(0, 1) == 1;
     else {
       var rand = randint(0, tp + fp);
+      var tc = [];
+      var fc = [];
       
     }
   }
