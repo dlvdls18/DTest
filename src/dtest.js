@@ -30,7 +30,8 @@ function DTest(func, rules, handler) {
     if(format != null) {
       fmt = "";
       if(format == 0) {
-        for(var i = 0; i < randint(1, 
+        for(var i = 0; i < randint(1, 3); i++) fmt += " " + generatefullword();
+        fmt = fmt.
       }
     }
     return fmt || random;
