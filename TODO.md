@@ -83,5 +83,5 @@ anyobject(size, min, max, key);
 DTest.VERSION = ...;
 ```
 
-- [ ] Remove the documentation from `dtest.js`
-- [ ] Remove the TODO from `README.md`
+- [x] Remove the documentation from `dtest.js`
+- [x] Remove the TODO from `README.md`
