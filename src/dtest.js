@@ -166,7 +166,7 @@ function DTest(func, rules, handler) {
       var yf = parseInt("0." + (y + 1));
       var nf = parseInt("0." + (n + 1));
       var ns = [yf, nf].sort();
-      if(num < ns[0]
+      if(num < ns[0]) return 
     }
   }
   // loop each rules
