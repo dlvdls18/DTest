@@ -31,4 +31,5 @@ June 2, 2022
 ### File `version.txt` updated
 ### File `TODO.md` updated
 ### File `info/HISTORY.md` added
-### Added range to array any
+### Added range to `array any` and `array object` for number
+#
