@@ -38,4 +38,5 @@ June 2, 2022
 ### Make the static variable unwritable
 ### Remove duplicates added
 ### Function `DTest` argument added `config`
-### Function `any` argument added ``
+### Function `any` argument added `config`
+### Function `anyobject` argument added ``
