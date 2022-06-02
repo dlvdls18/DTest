@@ -151,7 +151,8 @@ function DTest(func, rules, handler) {
   // generate full un/defined word
   function generateword() {
     var gen = "";
-    for(var i = 0; i < randint(1, 8); i++) gen += generateword
+    for(var i = 0; i < randint(1, 8); i++) gen += generateword();
+    return gen;
   }
   // loop each rules
   var call_args = [];
