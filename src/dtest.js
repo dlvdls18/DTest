@@ -194,10 +194,7 @@ DTest.VERSION = 1.1;
 for(var i in DTest) {
   if(["TYPE", "FORMAT", "PERCENTAGE", "VERSION"].includes(i.split("_")[0])) {
     Object.defineProperty(DTest, i, {
-      writable: false,
-      set: function(valu) {
-        
-      }
+      writable: false
     });
   }
 }
