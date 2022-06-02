@@ -37,4 +37,5 @@ June 2, 2022
 ### Static variable `FOMRAT_STRING`, `FORMAT_NUMBER`, `PERCENTAGE_LOW`, `PERCENTAGE_NORMAL`, `PERCENTAGE_HIGH`, `VEESION` added
 ### Make the static variable unwritable
 ### Remove duplicates added
-### Change the function argument from `func, rules, handler` to `func, rules, config,`
+### Function argument changed from `func, rules, handler` to `func, rules, handler, config`
+### Function
