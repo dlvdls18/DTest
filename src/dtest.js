@@ -42,10 +42,11 @@ function DTest(func, rules, handler) {
   function bool(tp, fp) {
     if(!tp || !fp) return randint(0, 1) == 1;
     else {
-      var rand = randint(0, tp + fp);
+      var max = tp + fp;
+      var rand = randint(0, max);
       var tc = [];
       var fc = [];
-      
+      for(var i = 0; i < tp 
     }
   }
   // return random any type
