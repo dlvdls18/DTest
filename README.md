@@ -137,7 +137,7 @@ These are the arguments of `DTest` function:
     - Customized object size (required)
     - Keys can be String or Number
 - Add predicted value
-  - a
+  - Set the argument value to given pred
 
 More features coming soon!
 
