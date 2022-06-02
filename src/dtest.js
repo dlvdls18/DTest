@@ -139,7 +139,10 @@ function DTest(func, rules, handler) {
   // capitalize each words
   // usage for format string
   function title(str) {
-    var str
+    var res = "";
+    for(var i = 0; i < str.split(" ").length; i++) {
+      var w = str.split(" ")[i]
+    }
   }
   // loop each rules
   var call_args = [];
