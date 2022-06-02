@@ -48,3 +48,4 @@ June 2, 2022
 ### Boolean percentage added
 ### Task `Add arguments verification` added to `TODO.md`
 ### Task `Transfer version.txt, TODO.md, CONTRIBUTION.md to info/...` added to `TODO.md`
+### `README.md` updated
