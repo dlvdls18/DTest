@@ -71,7 +71,7 @@ anyobject(size, min, max, key);
 
 [{
   type: DTest.TYPE_STRING,
-  config: [true, DTest.FORMAT_STRING | DTest.FORMAT_NUMBER | DTest.FORMAT_BOOLEAN]
+  config: [DTest.FORMAT_STRING | DTest.FORMAT_NUMBER | DTest.FORMAT_BOOLEAN]
 }]
 // > Hogelir Watufe
 // > 0193 8263 8264 6192
@@ -91,6 +91,6 @@ DTest.VERSION = ...;
 anyobject(12, {
   randint: [10, 30],
   boolean: [DTest.PERCENTAGE_LOW, DTest.PERCENTAGE_NORMAL],
-  string:
+  string: [DTest.fo]
 });
 ```
