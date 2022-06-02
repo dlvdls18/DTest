@@ -87,3 +87,8 @@ DTest.VERSION = ...;
 - [x] Remove the TODO from `README.md`
 
 - [x] Add configuration for `any array` and `any object`
+```js
+anyobject(12, {
+  
+});
+```
