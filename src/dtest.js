@@ -31,7 +31,9 @@ function DTest(func, rules, handler) {
       fmt = "";
       if(format == 0) {
         for(var i = 0; i < randint(1, 3); i++) fmt += " " + generatefullword();
-        fmt = fmt.
+        fmt = fmt.slice(1);
+      } else {
+        
       }
     }
     return fmt || random;
