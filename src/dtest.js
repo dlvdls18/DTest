@@ -190,4 +190,7 @@ DTest.PERCENTAGE_HIGHEST = 4;
 DTest.VERSION = 1.0;
 
 
-// make all static variables above unwritable
+// make all static variables (above) unwritable
+for(var i in DTest) {
+  if(i.toUpperCase()
+}
