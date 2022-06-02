@@ -170,6 +170,11 @@ function DTest(func, rules, handler, config) {
       else return bool();
     }
   }
+  // convert set to array
+  function set_to_array(set) {
+    var arr = [];
+    set.forEach(function(
+  }
   // loop each rules
   var call_args = [];
   for(var i = 0; i < rules.length; i++) {
