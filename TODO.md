@@ -19,7 +19,7 @@ anyobject(size, min, max, key);
 // > ...
 ```
 
-- [ ] Add predictable value
+- [x] Add predictable value
 
 ```js
 [{
@@ -85,3 +85,5 @@ DTest.VERSION = ...;
 
 - [x] Remove the documentation from `dtest.js`
 - [x] Remove the TODO from `README.md`
+
+- [x] Add configuration for `any array and `any object`
