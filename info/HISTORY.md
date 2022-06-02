@@ -12,4 +12,4 @@ June 2, 2022
 
 [README.md](https://github.com/dlvdls18/DTest/blob/main/README.md)
 
-[Main JS File](https://github.com/dlvdls18/DTest/blob/main/s)
+[Main JS File](https://github.com/dlvdls18/DTest/blob/main/src/dtest.js)
