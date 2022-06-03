@@ -26,7 +26,7 @@ console.log(test);
 
 ## Installation
 
-Download the file [dtest.js](https://cdn.jsdelivr.net/gh/dlvdls18/DTest@main/dtest.js)
+Download the file [dtest.js](https://cdn.jsdelivr.net/gh/dlvdls18/DTest@main/src/dtest.js)
 then add the following code:
 
 ```html
@@ -35,7 +35,7 @@ then add the following code:
 
 Or use JSDelivr CDN:
 ```html
-<script src="https://cdn.jsdelivr.net/gh/dlvdls18/DTest@main/dtest.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/dlvdls18/DTest@main/src/dtest.js"></script>
 ```
 
 ## Building Your Project
