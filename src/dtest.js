@@ -40,7 +40,7 @@ function DTest(func, rules, handler, config) {
   }
   // return random boolean
   function bool(tp, fp) {
-    if(!tp || !fp) return randint(0, 1) == 1;
+    if(tp == null && fp == null) return randint(0, 1) == 1;
     else return percentage(tp, fp);
   }
   // return random any type
@@ -141,7 +141,7 @@ function DTest(func, rules, handler, config) {
     var res = "";
     for(var i = 0; i < str.split(" ").length; i++) {
       var w = str.split(" ")[i];
-      res += " " + w.charAt(1).toUpperCase() + w.slice(1);
+      res += " " + w.charAt(0).toUpperCase() + w.slice(1);
     }
     return res.slice(1);
   }
@@ -149,25 +149,23 @@ function DTest(func, rules, handler, config) {
   function generateword() {
     // some letters are removed for stable word
     var vowels = Array.from("aeiou");
-    var consonants = Array.from("bcdfghklmnprsty");
-    return consonants[randint(0), consonants.length - 1] + vowels[randint(0, vowels.length - 1)];
+    var consonants = Array.from("bdfgklmnprst");
+    return consonants[randint(0, consonants.length - 1)] + vowels[randint(0, vowels.length - 1)];
   }
   // generate full un/defined word
   function generatefullword() {
     var gen = "";
-    for(var i = 0; i < randint(1, 8); i++) gen += generateword();
-    return gen;
+    for(var i = 0; i < randint(1, 10); i++) gen += generateword();
+    return title(gen);
   }
   // percentage boolean
   function percentage(y, n) {
     if(y == n) return randint(0, 1) == 0;
     else {
-      var num = Math.random();
-      var yf = parseInt("0." + (y + 1));
-      var nf = parseInt("0." + (n + 1));
-      if(num < yf) return true;
-      else if(num < nf) return false;
-      else return bool();
+      var num = randint(0, 5);
+      if(num < (y + 1)) return true;
+      else if(num < (n + 1)) return false;
+      else return y > n;
     }
   }
   // convert set to array
@@ -182,14 +180,15 @@ function DTest(func, rules, handler, config) {
     var rule = rules[i];
     var rf = [string, randint, bool, any, stringarray, numarray, boolarray, anyarray, stringobject, numobject, boolobject, anyobject];
     var rt = rule.type;
-    var f = null;
-    if(typeof rt == "string") f = arraysearch(rf, rt);
-    else f = arraysearch(rf, rt[randint(0, rt.length - 1)]);
-    if(rule.nullable == true && bool() == true) call_args.push(null);
-    else call_args.push(rule.pred_value || f.apply({}, rule.config || []));
+    var rfu = null;
+    var b = bool();
+    if(typeof rt == "number") rfu = arraysearch(rf, rt);
+    else rfu = arraysearch(rf, rt[randint(0, rt.length - 1)]);
+    if(rule.nullable == true && b == true) call_args.push(null);
+    else call_args.push(rule.pred_value || rfu.apply({}, rule.config || []));
   }
   // remove duplicates
-  if(config.remove_duplicates == true) {
+  if(config && config.remove_duplicates == true) {
     call_args = new Set(call_args);
     call_args = set_to_array(call_args);
   }
