@@ -23,9 +23,11 @@ console.log(test);
 ```
 
 
+<!--
 # Development
 
 If you want to test your function quickly, view [DTest Development](https://dlvdls18.github.io/DTest/dev.html).
+-->
 
 
 
