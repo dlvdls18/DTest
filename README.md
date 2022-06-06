@@ -515,7 +515,7 @@ These are available keys for the `config`:
 
 Feature added at **1.1**
 
-You can control how random boolean generates
+You can control how random boolean generates with this feature
 
 
 ### Arguments
