@@ -34,8 +34,8 @@ $("#btn-import").click(function() {
 $("#import-file").change(async function(evt) {
   var el = evt.target;
   if(!el.value.endsWith(".js")) return;
-  console.log(el);
-  editor.value
+  var file = el.files[0];
+  console.log(file);
 });
 
 </script>
