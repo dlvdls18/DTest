@@ -33,8 +33,8 @@ $("#btn-import").click(function() {
 
 $("#import-file").change(async function(evt) {
   var el = evt.target;
-  //if(!el.endsWith(".js")) return;
-  console.log(el.value);
+  if(!el.value.endsWith(".js")) return;
+  console.log(el);
   editor.value
 });
 
