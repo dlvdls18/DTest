@@ -1,1 +1,4 @@
 theme: jekyll-theme-midnight
+title: DTest
+description: Test and call functions with random predicted arguments
+permalink: /dev.html
