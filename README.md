@@ -107,14 +107,13 @@ touch index.js
 
 These are the arguments of `DTest` function:
 
---------------------------------------------------------------
 |  Name   |     Type     |       Description      | Required |
 |---------|--------------|------------------------|----------|
 | func    | Function     | Function to test       |   Yes    |
 | rules   | Array Object | How arguments generate |   Yes    |
 | handler | Function     | How function called    |   No     |
 | config  | Object       | Each arguments config  |   No     |
---------------------------------------------------------------
+
 
 ## Writing Rules
 
@@ -222,7 +221,6 @@ So `config` is an array for arguments.
 These are the arguments for `type functions`:
 
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 |           Type              |      Arguments       |                                             Description                                                   |
 |-----------------------------|----------------------|-----------------------------------------------------------------------------------------------------------|
 |          String             |       Format         | String Format                                                                                             |
@@ -232,7 +230,7 @@ These are the arguments for `type functions`:
 |       Array Number          |   Size, Min, Max     | Length of the array (required), Randomization Range (default 0-10)                                        |
 | Object String, Boolean, Any |      Size, Key       | Length of the object (required), Key Type (number) (String or Number)                                     |
 |      Object Number          | Size, Min, Max, Key  | Length of the object (required), Randomization Range (default 0-10), Key Type (number) (String or Number) |
------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 ## Argument Length
 
@@ -515,13 +513,31 @@ These are available keys for the `config`:
 
 ## Boolean Percentage
 
+Feature added at **1.1**
+
+You can control how random boolean generates
+
+
+### Arguments
+
+- True Percentage
+- False Percentage
+
+
+
+
+### Percentages
+
 - `DTest.PERCENTAGE_LOW`
 - `DTest.PERCENTAGE_NORMAL`
 - `DTest.PERCENTAGE_HIGH`
 
+
+### Example
+
 ```js
 DTest(..., [{
   type: DTest.TYPE_BOOLEAN,
-  config: [DTest.PERCENTAGE_LOW, DTest.PERCENTAGE_HIGJ]
+  config: [DTest.PERCENTAGE_LOW, DTest.PERCENTAGE_HIGH]
 }]);
 ```
