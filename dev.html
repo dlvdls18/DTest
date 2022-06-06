@@ -31,10 +31,11 @@ $("#btn-import").click(function() {
   $("#import-file").trigger("click");
 });
 
-$("#import-file").change(function(evt) {
+$("#import-file").change(async function(evt) {
   var el = evt.target;
   if(!el.endsWith(".js")) return;
-  
+  console.log(el.value);
+  editor.value
 });
 
 </script>
