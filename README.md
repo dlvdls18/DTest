@@ -512,14 +512,3 @@ DTest(..., [{
   config: [DTest.PERCENTAGE_LOW, DTest.PERCENTAGE_HIGJ]
 }]);
 ```
-
-# Others
-
-## Contribution
-
-Anyone can `contribute` for free but there are limitations and rules.
-You can read it at [CONTRIBUTION.md](https://github.com/dlvdls18/DTest/blob/main/info/CONTRIBUTION.md)
-
-## TODO
-
-You can view or contribute at the [TODO.md](https://github.com/dlvdls18/DTest/blob/main/info/TODO.md)
