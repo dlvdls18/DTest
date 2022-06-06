@@ -35,7 +35,7 @@ $("#import-file").change(async function(evt) {
   var el = evt.target;
   if(!el.value.endsWith(".js")) return;
   var file = el.files[0];
-  console.log(file);
+  editor.value = await file.text();
 });
 
 </script>
