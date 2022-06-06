@@ -51,6 +51,9 @@ touch index.js
 
 2. Open your favorite IDE and open the file `/MyProject/index.html`
 3. Copy this html template and paste it to `index.html`
+
+
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
