@@ -32,7 +32,8 @@ $("#btn-import").click(function() {
 });
 
 $("#import-file").change(function(evt) {
-  var target = evt.target;
+  var el = evt.target;
+  if(!el.endsWith(".js")) return;
   
 });
 
