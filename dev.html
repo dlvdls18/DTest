@@ -54,7 +54,9 @@ $("#import-file").change(async function(evt) {
 
 function update() {
   requestAnimationFrame(update);
-  $("#argument-list > li").clickf(function(
+  $("#argument-list > li").click(function(evt) {
+    var el = evt.target;
+  });
 }
 
 </script>
