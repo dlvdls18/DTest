@@ -126,9 +126,12 @@ These are the arguments of `DTest` function:
 `Rules` can:
 - Customize the argument type
   - String
+    - Format as String
+    - Format as Number
   - Number
     - Can customize the range (0-10 by default)
   - Boolean
+    - Result percentage
   - Any (String, Number, Boolean)
   - Array String
     - Customized array size (required)
