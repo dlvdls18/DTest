@@ -1,4 +1,7 @@
 # DTest
+
+![DTest](dtest.png)
+
 Test and call function with random predicted arguments.
 `DTest` generates random arguments and call the function with the arguments.
 Generating argument is easy and simple, you can customize it anytime.
