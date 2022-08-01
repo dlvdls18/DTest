@@ -25,12 +25,8 @@ var test = DTest(NewUser, [{
 console.log(test);
 ```
 
-
-<!--
-# Development
-
-If you want to test your function quickly, view [DTest Development](https://dlvdls18.github.io/DTest/dev.html).
--->
+# Quick Test
+Click [here](http://dlvdl18.great-site.net/dev/DTest/) to test your function online.
 
 
 
