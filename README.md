@@ -26,7 +26,7 @@ console.log(test);
 ```
 
 # Quick Test
-Click [here](http://dlvdl18.great-site.net/dev/DTest/) to test your function online.
+Click [here](http://dlvdl18.great-site.net/dev/DTest/index.html) to test your function online.
 
 
 
